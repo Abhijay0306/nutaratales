@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 transition-opacity hover:opacity-90">
           <Image 
-            src="/logo.png" 
+            src="/logo.svg" 
             alt="Nutura Tales" 
             width={180} 
             height={48} 
