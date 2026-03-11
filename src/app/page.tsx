@@ -17,15 +17,15 @@ export default function Home() {
     <div>
       {/* Hero Section */}
       <section className="relative pt-32 pb-40 border-b border-light/50 text-center px-4 flex items-center justify-center min-h-[70vh]">
-        <div className="absolute inset-0 z-0 bg-black">
+        <div className="absolute inset-0 z-0">
           <Image 
             src="/Banner.png"
             alt="Nutara Tales Banner"
             fill
-            className="object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-700"
+            className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
         </div>
         
         <div className="container mx-auto max-w-4xl relative z-10">
