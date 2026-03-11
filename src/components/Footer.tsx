@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -7,7 +8,15 @@ export default function Footer() {
     <footer className="bg-dark text-background py-12 mt-auto">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
         <div>
-          <h3 className="font-serif text-xl font-bold mb-4 text-light">Nutura Tales</h3>
+          <Link href="/" className="inline-block mb-4 transition-opacity hover:opacity-90">
+            <Image 
+              src="/logo.svg" 
+              alt="Nutara Tales" 
+              width={160} 
+              height={42} 
+              className="h-8 w-auto md:h-10 brightness-0 invert opacity-90"
+            />
+          </Link>
           <p className="text-background/80 max-w-xs leading-relaxed">
             Your trusted source for sustainable living, eco-friendly cooking, and zero-waste habits.
           </p>
@@ -29,7 +38,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="container mx-auto px-4 mt-12 pt-8 border-t border-light/20 flex flex-col md:flex-row justify-between items-center text-xs text-background/60">
-        <p>&copy; {currentYear} Nutura Tales. All rights reserved.</p>
+        <p>&copy; {currentYear} Nutara Tales. All rights reserved.</p>
         <p className="mt-2 md:mt-0 text-center md:text-right max-w-md">
           Disclosure: As an Amazon Associate, we earn from qualifying purchases.
         </p>

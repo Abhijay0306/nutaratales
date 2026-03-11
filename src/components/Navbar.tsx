@@ -8,7 +8,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2 transition-opacity hover:opacity-90">
           <Image 
             src="/logo.svg" 
-            alt="Nutura Tales" 
+            alt="Nutara Tales" 
             width={180} 
             height={48} 
             className="h-8 w-auto md:h-10"

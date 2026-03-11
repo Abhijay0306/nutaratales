@@ -1,4 +1,4 @@
-# Nutura Tales Sustainability Blog
+# Nutara Tales Sustainability Blog
 
 ## Overview
 
