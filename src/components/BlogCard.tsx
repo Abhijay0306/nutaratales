@@ -13,7 +13,8 @@ type BlogCardProps = {
 };
 
 export default function BlogCard({ slug, title, excerpt, date, image, category }: BlogCardProps) {
-  const formattedDate = format(parseISO(date), 'MMMM d, yyyy');
+  const parsedDate = typeof date === 'string' ? parseISO(date) : new Date(date);
+  const formattedDate = format(parsedDate, 'MMMM d, yyyy');
 
   return (
     <article className="group flex flex-col justify-start h-full border border-light/50 rounded-2xl overflow-hidden hover:shadow-lg hover:border-light transition-all duration-300 bg-white">
