@@ -16,26 +16,37 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-light/20 pt-20 pb-24 border-b border-light/50 text-center px-4">
-        <div className="container mx-auto max-w-4xl">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-dark mb-6 tracking-tight">
+      <section className="relative pt-32 pb-40 border-b border-light/50 text-center px-4 flex items-center justify-center min-h-[70vh]">
+        <div className="absolute inset-0 z-0">
+          <Image 
+            src="/Banner.png"
+            alt="Nutara Tales Banner"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-dark/60 backdrop-blur-[2px]"></div>
+        </div>
+        
+        <div className="container mx-auto max-w-4xl relative z-10">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 tracking-tight drop-shadow-lg">
             Living lighter, <br className="hidden sm:block" />
-            <span className="text-primary italic">living better.</span>
+            <span className="text-light italic drop-shadow-md">living better.</span>
           </h1>
-          <p className="text-lg md:text-xl text-text/80 mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow-md font-medium">
             Your practical guide to sustainable living, zero-waste kitchen habits, and eco-friendly cooking methods that don&apos;t sacrifice flavor.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link 
               href="/blog" 
-              className="bg-primary hover:bg-dark text-white font-medium px-8 py-3.5 rounded-full transition-colors flex items-center justify-center gap-2"
+              className="bg-primary hover:bg-white hover:text-dark text-white font-medium px-8 py-3.5 rounded-full transition-colors flex items-center justify-center gap-2"
             >
               Read Latest Articles
               <ArrowRight size={18} />
             </Link>
             <Link 
               href="/about" 
-              className="bg-white hover:bg-light/30 border border-light text-dark font-medium px-8 py-3.5 rounded-full transition-colors"
+              className="bg-transparent hover:bg-white/20 border-2 border-white text-white font-medium px-8 py-3.5 rounded-full transition-colors"
             >
               Our Mission
             </Link>
