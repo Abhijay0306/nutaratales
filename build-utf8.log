@@ -1,0 +1,40 @@
+﻿  Γû▓ Next.js 14.2.15
+
+   Creating an optimized production build ...
+node.exe : Failed to compile.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Users\Abhijay 
+Dutta\AppData\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Failed to com 
+   pile.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+./src/lib/mdxParser.ts
+Error: 
+  [31mx[0m Expected '>', got 'className'
+    ,-[[36;1;4mC:\nutara\mutual-retails-blog\src\lib\mdxPa
+rser.ts[0m:6:1]
+ [2m 6[0m | const components = {
+ [2m 7[0m |   AffiliateBox,
+ [2m 8[0m |   img: (props: any) => (
+ [2m 9[0m |     <span className="block relative w-full 
+h-[400px] my-8 rounded-xl overflow-hidden border 
+border-light/50">
+    : [31;1m          ^^^^^^^^^[0m
+ [2m10[0m |       <Image 
+ [2m11[0m |         {...props} 
+ [2m12[0m |         fill
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/lib/mdxParser.ts
+./src/app/blog/[slug]/page.tsx
+
+
+> Build failed because of webpack errors
