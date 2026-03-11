@@ -18,16 +18,16 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Mutual Retails Sustainability Blog",
-    default: "Mutual Retails Sustainability Blog",
+    template: "%s | Nutura Tales Sustainability Blog",
+    default: "Nutura Tales Sustainability Blog",
   },
   description: "A blog dedicated to sustainable living, eco-friendly cooking, and zero-waste kitchen habits.",
-  metadataBase: new URL("https://mutual-retails.vercel.app"),
+  metadataBase: new URL("https://nuturatales.vercel.app"),
   openGraph: {
-    title: "Mutual Retails Sustainability Blog",
+    title: "Nutura Tales Sustainability Blog",
     description: "A blog dedicated to sustainable living, eco-friendly cooking, and zero-waste kitchen habits.",
     type: "website",
-    siteName: "Mutual Retails",
+    siteName: "Nutura Tales",
   },
 };
 

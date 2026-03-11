@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Get in touch with Mutual Retails.',
+  description: 'Get in touch with Nutura Tales.',
 };
 
 export default function ContactPage() {
@@ -23,8 +23,8 @@ export default function ContactPage() {
           <div className="space-y-4">
             <div>
               <h3 className="text-sm font-bold text-dark uppercase tracking-wider mb-1">Email</h3>
-              <a href="mailto:hello@mutualretails.com" className="text-primary hover:text-dark transition-colors">
-                hello@mutualretails.com
+              <a href="mailto:hello@nuturatales.com" className="text-primary hover:text-dark transition-colors">
+                hello@nuturatales.com
               </a>
             </div>
             <div>

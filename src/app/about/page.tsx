@@ -2,17 +2,17 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Learn about Mutual Retails, our sustainability mission, and content philosophy.',
+  description: 'Learn about Nutura Tales, our sustainability mission, and content philosophy.',
 };
 
 export default function AboutPage() {
   return (
     <div className="container mx-auto px-4 py-16 max-w-3xl">
-      <h1 className="text-4xl md:text-5xl font-serif font-bold text-dark mb-8">About Mutual Retails</h1>
+      <h1 className="text-4xl md:text-5xl font-serif font-bold text-dark mb-8">About Nutura Tales</h1>
       
       <div className="prose prose-lg prose-green max-w-none text-text">
         <p className="lead text-xl text-text/80 mb-8 border-l-4 border-primary pl-6">
-          Mutual Retails is dedicated to making sustainable living accessible, practical, and beautiful.
+          Nutura Tales is dedicated to making sustainable living accessible, practical, and beautiful.
         </p>
 
         <h2 className="font-serif text-2xl text-dark mt-12 mb-4">Our Sustainability Mission</h2>
@@ -33,12 +33,12 @@ export default function AboutPage() {
           <li><strong>Aesthetics:</strong> Sustainable living should be beautiful. We take pride in presenting our content in a clean, inspiring, and engaging format.</li>
         </ul>
 
-        <h2 className="font-serif text-2xl text-dark mt-12 mb-4">The Mutual Retails Brand Story</h2>
+        <h2 className="font-serif text-2xl text-dark mt-12 mb-4">The Nutura Tales Brand Story</h2>
         <p>
-          Mutual Retails began with a simple question: <em>&quot;How can we minimize our footprint while maximizing our culinary and lifestyle experiences?&quot;</em>
+          Nutura Tales began with a simple question: <em>&quot;How can we minimize our footprint while maximizing our culinary and lifestyle experiences?&quot;</em>
         </p>
         <p>
-          What started as a personal challenge to cook without fire and reduce kitchen waste quickly grew into a passion for exploring all facets of eco-friendly living. Today, Mutual Retails serves as a hub for a growing community of readers who share our commitment to a sustainable future.
+          What started as a personal challenge to cook without fire and reduce kitchen waste quickly grew into a passion for exploring all facets of eco-friendly living. Today, Nutura Tales serves as a hub for a growing community of readers who share our commitment to a sustainable future.
         </p>
       </div>
     </div>

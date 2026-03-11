@@ -1,11 +1,19 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-light/30 bg-background/80 backdrop-blur-md">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="text-xl font-serif font-bold text-primary tracking-tight">
-          Mutual<span className="text-dark">Retails</span>
+        <Link href="/" className="flex items-center gap-2 transition-opacity hover:opacity-90">
+          <Image 
+            src="/logo.png" 
+            alt="Nutura Tales" 
+            width={180} 
+            height={48} 
+            className="h-8 w-auto md:h-10"
+            priority
+          />
         </Link>
         <nav className="hidden md:flex items-center gap-8">
           <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Privacy Policy and Affiliate Disclosure for Mutual Retails.',
+  description: 'Privacy Policy and Affiliate Disclosure for Nutura Tales.',
 };
 
 export default function PrivacyPolicyPage() {
@@ -19,7 +19,7 @@ export default function PrivacyPolicyPage() {
 
         <h2 className="font-serif text-2xl text-dark mt-10 mb-4">Cookies and Web Beacons</h2>
         <p>
-          Like any other website, Mutual Retails uses &quot;cookies&quot;. These cookies are used to store information including visitors&apos; preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users&apos; experience by customizing our web page content based on visitors&apos; browser type and/or other information.
+          Like any other website, Nutura Tales uses &quot;cookies&quot;. These cookies are used to store information including visitors&apos; preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users&apos; experience by customizing our web page content based on visitors&apos; browser type and/or other information.
         </p>
 
         <h2 className="font-serif text-2xl text-dark mt-10 mb-4">Analytics</h2>
@@ -29,7 +29,7 @@ export default function PrivacyPolicyPage() {
 
         <h2 className="font-serif text-2xl text-dark mt-10 mb-4">Affiliate Disclosure</h2>
         <p>
-          Mutual Retails is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com and affiliated sites.
+          Nutura Tales is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com and affiliated sites.
         </p>
         <p>
           When you click on links to various merchants on this site and make a purchase, this can result in this site earning a commission. Affiliate programs and affiliations include, but are not limited to, the Amazon Associate network.

@@ -1,4 +1,4 @@
-# Mutual Retails Sustainability Blog
+# Nutura Tales Sustainability Blog
 
 ## Overview
 
