@@ -4,10 +4,23 @@ import { getAllPosts } from '@/lib/getPosts';
 import BlogCard from '@/components/BlogCard';
 import Newsletter from '@/components/Newsletter';
 import { ArrowRight } from 'lucide-react';
+import fs from 'fs';
+import path from 'path';
 
 export default function Home() {
   const posts = getAllPosts();
   const latestPosts = posts.slice(0, 3);
+  
+  let bannerImage = '/Banner.png';
+  try {
+    const globalPath = path.join(process.cwd(), 'content', 'global', 'index.json');
+    if (fs.existsSync(globalPath)) {
+      const globalData = JSON.parse(fs.readFileSync(globalPath, 'utf8'));
+      if (globalData.bannerImage) bannerImage = globalData.bannerImage;
+    }
+  } catch (e) {
+    console.error('Error reading global settings', e);
+  }
   
   // A featured guide could just be a specific post or a hardcoded section. 
   // For this, we'll pick the first solar cooking post as the featured guide.
@@ -19,7 +32,7 @@ export default function Home() {
       <section className="relative pt-32 pb-40 border-b border-light/50 text-center px-4 flex items-center justify-center min-h-[70vh]">
         <div className="absolute inset-0 z-0">
           <Image 
-            src="/Banner.png"
+            src={bannerImage}
             alt="Nutara Tales Banner"
             fill
             className="object-cover"
