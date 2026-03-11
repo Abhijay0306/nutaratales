@@ -1,4 +1,16 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mutual Retails Sustainability Blog
+
+## Overview
+
+A dynamic, cleanly designed sustainability blog built with Next.js 14 and Tailwind CSS. Explore our latest guides on zero-waste living, eco-friendly food preparation, and more.
+
+## Architecture
+
+- **Framework**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS, Next/Font (Inter, Playfair Display)
+- **Content**: File-system based MDX parsed with `next-mdx-remote`
+- **Search**: Client-side filtering and search using `fuse.js`
+- **SEO**: Next.js App Router Metadata API
 
 ## Getting Started
 
@@ -16,21 +28,24 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Adding Content
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To add a new blog post, create a `.mdx` file in the `content/blog` directory with the following frontmatter:
 
-## Learn More
+```yaml
+---
+title: "Your Title Here"
+date: "YYYY-MM-DDTHH:MM:SSZ"
+author: "Author Name"
+category: "Category Name"
+excerpt: "A short summary of the post."
+image: "URL to image"
+---
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Statically generated pages for optimal performance
+- Interactive client-side blog listing and search
+- Embedded affiliate product components using `MDX`
+- Fully responsive, accessible, minimal green-themed minimalist layout.
