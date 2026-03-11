@@ -50,6 +50,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+function safeParse(date: string | Date): Date {
+  return typeof date === 'string' ? parseISO(date) : new Date(date);
+}
+
 export default function BlogPostPage({ params }: Props) {
   const post = getPostBySlug(params.slug);
 
@@ -67,7 +71,7 @@ export default function BlogPostPage({ params }: Props) {
     .filter(p => p.category === post.metadata.category && p.slug !== post.slug)
     .slice(0, 3);
 
-  const formattedDate = format(parseISO(post.metadata.date), 'MMMM d, yyyy');
+  const formattedDate = format(safeParse(post.metadata.date), 'MMMM d, yyyy');
 
   return (
     <article className="pb-24">
@@ -150,7 +154,7 @@ export default function BlogPostPage({ params }: Props) {
                   </div>
                   <div className="p-4">
                     <h4 className="font-serif font-bold text-lg text-dark group-hover:text-primary transition-colors line-clamp-2 mb-2">{related.title}</h4>
-                    <span className="text-xs text-text/60">{format(parseISO(related.date), 'MMM d, yyyy')}</span>
+                    <span className="text-xs text-text/60">{format(safeParse(related.date), 'MMM d, yyyy')}</span>
                   </div>
                 </Link>
               ))}
